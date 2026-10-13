@@ -1,0 +1,854 @@
+
+/* ==========================================
+   STAR AQUA - PREMIUM HERO DESIGN
+========================================== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      ellipse at 83% 35%,
+      rgba(72, 202, 228, 0.22),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 10% 90%,
+      rgba(0, 150, 199, 0.08),
+      transparent 42%
+    ),
+    linear-gradient(120deg, #ffffff 0%, #f3fbff 48%, #e9f9ff 100%);
+}
+
+/* Background decoration */
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.hero-glow-one {
+  width: 450px;
+  height: 450px;
+  right: -180px;
+  top: -190px;
+  background: rgba(0, 180, 216, 0.09);
+}
+
+.hero-glow-two {
+  width: 280px;
+  height: 280px;
+  left: -150px;
+  bottom: -150px;
+  background: rgba(0, 119, 182, 0.07);
+}
+
+/* Main layout */
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+  width: min(90%, 1240px);
+  min-height: calc(100vh - 75px);
+  margin: 0 auto;
+  padding: 75px 0 90px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 75px);
+  box-sizing: border-box;
+}
+
+.hero-content {
+  min-width: 0;
+  animation: heroFadeUp 0.8s ease both;
+}
+
+/* Top badge */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  max-width: 100%;
+  padding: 10px 16px;
+  border: 1px solid rgba(0, 150, 199, 0.16);
+  border-radius: 50px;
+  background: rgba(227, 248, 255, 0.85);
+  color: #0077a8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+
+.hero-badge svg {
+  flex-shrink: 0;
+  color: #00a6c8;
+  font-size: 15px;
+}
+
+/* Eyebrow */
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 34px;
+  margin-bottom: 16px;
+  color: #0077b6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.hero-eyebrow-line {
+  width: 30px;
+  height: 2px;
+  border-radius: 10px;
+  background: #00b4d8;
+}
+
+/* Main heading */
+
+.hero-content h1 {
+  margin: 0;
+  color: #072b42;
+  font-size: clamp(46px, 5.4vw, 76px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2.8px;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(
+    100deg,
+    #0077b6 0%,
+    #00a6c8 55%,
+    #32c5d8 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+
+.hero-description {
+  max-width: 570px;
+  margin: 26px 0 0;
+  color: #5c7080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* Action buttons */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.hero-whatsapp-btn,
+.hero-call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 54px;
+  padding: 15px 23px;
+  border-radius: 14px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.hero-whatsapp-btn {
+  color: #ffffff;
+  background: linear-gradient(135deg, #17c86c, #079e56);
+  border: 1px solid #0bad5d;
+  box-shadow: 0 12px 26px rgba(9, 166, 91, 0.22);
+}
+
+.hero-whatsapp-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(9, 166, 91, 0.3);
+}
+
+.hero-whatsapp-btn > svg:first-child {
+  font-size: 21px;
+}
+
+.hero-button-arrow {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.hero-whatsapp-btn:hover .hero-button-arrow {
+  transform: translateX(4px);
+}
+
+.hero-call-btn {
+  color: #0077b6;
+  background: #ffffff;
+  border: 1px solid #cce8f4;
+  box-shadow: 0 8px 24px rgba(4, 83, 128, 0.06);
+}
+
+.hero-call-btn:hover {
+  color: #005f95;
+  background: #f0fbff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(4, 83, 128, 0.12);
+}
+
+.hero-call-btn svg {
+  font-size: 15px;
+}
+
+/* Trust features */
+
+.hero-trust-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 48px;
+  padding-top: 27px;
+  border-top: 1px solid rgba(2, 48, 71, 0.09);
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.hero-trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #e2f7ff;
+  color: #0077b6;
+  font-size: 17px;
+}
+
+.hero-trust-item strong,
+.hero-trust-item small {
+  display: block;
+}
+
+.hero-trust-item strong {
+  color: #173a50;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hero-trust-item small {
+  margin-top: 4px;
+  color: #728594;
+  font-size: 11px;
+}
+
+.hero-trust-divider {
+  width: 1px;
+  height: 37px;
+  background: #d9eaf0;
+}
+
+/* Right visual */
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: heroFadeUp 0.9s ease 0.15s both;
+}
+
+.hero-visual-halo {
+  position: absolute;
+  width: 110%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(72, 202, 228, 0.25) 0%,
+    rgba(144, 224, 239, 0.12) 48%,
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* Image frame */
+
+.hero-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1.04;
+  padding: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 30px 75px rgba(0, 95, 145, 0.15),
+    0 5px 20px rgba(0, 95, 145, 0.06);
+  box-sizing: border-box;
+  transform: rotate(2deg);
+  transition: transform 0.4s ease;
+}
+
+.hero-image-frame:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+.hero-main-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+/* Floating info card */
+
+.hero-floating-card {
+  position: absolute;
+  right: -12px;
+  bottom: 45px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 20px;
+  border: 1px solid rgba(215, 240, 248, 0.9);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 18px 40px rgba(0, 76, 119, 0.15);
+  animation: heroFloat 4s ease-in-out infinite;
+}
+
+.floating-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  color: #0096c7;
+  background: #e1f8ff;
+  font-size: 21px;
+}
+
+.hero-floating-card strong {
+  display: block;
+  color: #073b56;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.hero-floating-card small {
+  display: block;
+  margin-top: 5px;
+  color: #738696;
+  font-size: 11px;
+}
+
+/* Small badge */
+
+.hero-mini-badge {
+  position: absolute;
+  top: 26px;
+  left: -24px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 17px;
+  border: 1px solid #e2f1f7;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #075c84;
+  box-shadow: 0 10px 30px rgba(0, 95, 145, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero-mini-badge svg {
+  color: #17b890;
+  font-size: 16px;
+}
+
+/* Bottom decoration */
+
+.hero-bottom-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #90e0ef,
+    #00b4d8,
+    #90e0ef,
+    transparent
+  );
+}
+
+/* Animations */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1050px) {
+  .hero-container {
+    width: 92%;
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 5vw, 60px);
+  }
+
+  .hero-floating-card {
+    right: -5px;
+    bottom: 20px;
+  }
+
+  .hero-mini-badge {
+    left: -8px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    width: 90%;
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 65px 0 90px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-badge {
+    justify-content: center;
+  }
+
+  .hero-eyebrow {
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(40px, 8vw, 58px);
+    letter-spacing: -1.8px;
+  }
+
+  .hero-description {
+    max-width: 580px;
+    margin: 23px auto 0;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-trust-strip {
+    justify-content: center;
+    margin-top: 36px;
+  }
+
+  .hero-visual {
+    width: min(100%, 480px);
+    margin: 0 auto;
+  }
+
+  .hero-image-frame {
+    width: 90%;
+  }
+
+  .hero-floating-card {
+    right: 0;
+    bottom: 15px;
+  }
+
+  .hero-mini-badge {
+    left: 0;
+    top: 15px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 480px) {
+  .hero-container {
+    width: 92%;
+    padding-top: 42px;
+    gap: 48px;
+  }
+
+  .hero-badge {
+    padding: 9px 12px;
+    font-size: 10px;
+  }
+
+  .hero-eyebrow {
+    margin-top: 27px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(36px, 10vw, 45px);
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-whatsapp-btn,
+  .hero-call-btn {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero-trust-strip {
+    gap: 14px;
+  }
+
+  .hero-trust-divider {
+    display: none;
+  }
+
+  .hero-trust-item {
+    gap: 8px;
+  }
+
+  .hero-trust-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .hero-trust-item strong {
+    font-size: 11px;
+  }
+
+  .hero-trust-item small {
+    font-size: 10px;
+  }
+
+  .hero-image-frame {
+    width: 94%;
+    border-radius: 25px;
+  }
+
+  .hero-main-image {
+    border-radius: 19px;
+  }
+
+  .hero-floating-card {
+    right: -2px;
+    bottom: -15px;
+    padding: 10px 12px;
+    gap: 9px;
+  }
+
+  .floating-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+  }
+
+  .hero-floating-card strong {
+    font-size: 12px;
+  }
+
+  .hero-floating-card small {
+    font-size: 9px;
+  }
+
+  .hero-mini-badge {
+    left: -2px;
+    top: 5px;
+    padding: 9px 11px;
+    font-size: 10px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content,
+  .hero-visual,
+  .hero-floating-card {
+    animation: none;
+  }
+
+  .hero-image-frame,
+  .hero-whatsapp-btn,
+  .hero-call-btn {
+    transition: none;
+  }
+}
+
+/* ==========================================
+   STAR AQUA RESPONSIVE FIX
+========================================== */
+
+/* Prevent elements from exceeding screen width */
+.hero,
+.hero-container,
+.hero-content,
+.hero-visual {
+  box-sizing: border-box;
+}
+
+.hero-container > * {
+  min-width: 0;
+}
+
+.hero-content h1,
+.hero-description {
+  overflow-wrap: break-word;
+}
+
+/* Small laptops and tablets */
+@media (max-width: 1100px) {
+  .hero-container {
+    width: 92%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(38px, 4.6vw, 58px);
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-image-frame {
+    width: 95%;
+  }
+}
+
+/* Tablet and mobile */
+@media (max-width: 850px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    width: min(92%, 600px);
+    min-height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 45px;
+    padding: 55px 0 80px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-badge {
+    max-width: 100%;
+    font-size: 11px;
+  }
+
+  .hero-eyebrow {
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(36px, 7vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    max-width: 550px;
+    margin: 22px auto 0;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-trust-strip {
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-image-frame {
+    width: 90%;
+    max-width: 430px;
+    transform: none;
+  }
+
+  .hero-floating-card {
+    right: 0;
+    bottom: 5px;
+  }
+
+  .hero-mini-badge {
+    left: 0;
+    top: 10px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .hero-container {
+    width: 92%;
+    padding: 38px 0 75px;
+    gap: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(34px, 9.5vw, 44px);
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-whatsapp-btn,
+  .hero-call-btn {
+    width: 100%;
+    max-width: none;
+    min-height: 50px;
+  }
+
+  .hero-trust-strip {
+    gap: 12px;
+  }
+
+  .hero-trust-item {
+    flex: 1 1 135px;
+    justify-content: center;
+  }
+
+  .hero-image-frame {
+    width: 92%;
+    padding: 6px;
+    border-radius: 24px;
+  }
+
+  .hero-main-image {
+    border-radius: 19px;
+  }
+
+  .hero-mini-badge {
+    left: 0;
+    top: -12px;
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+
+  .hero-floating-card {
+    right: 0;
+    bottom: -15px;
+    padding: 9px 11px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-badge {
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+
+  .hero-trust-item {
+    flex-basis: 100%;
+  }
+
+  .hero-floating-card small {
+    font-size: 8px;
+  }
+}

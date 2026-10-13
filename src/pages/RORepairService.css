@@ -1,0 +1,413 @@
+.ro-repair-page {
+  width: 100%;
+  background: #ffffff;
+  color: #023047;
+}
+
+.ro-repair-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.ro-repair-hero {
+  padding: 120px 0 90px;
+  background:
+    linear-gradient(
+      135deg,
+      #f7fcff 0%,
+      #eaf8ff 100%
+    );
+}
+
+.ro-repair-label {
+  display: inline-block;
+  padding: 7px 16px;
+  margin-bottom: 18px;
+
+  border-radius: 20px;
+
+  background: #e1f8ff;
+  color: #0077b6;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ro-repair-hero h1 {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.12;
+
+  color: #023047;
+}
+
+.ro-repair-hero h1 span {
+  color: #0077b6;
+}
+
+.ro-repair-hero-description {
+  max-width: 760px;
+
+  margin: 22px 0 0;
+
+  color: #64748b;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.ro-repair-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.ro-repair-primary-button,
+.ro-repair-secondary-button,
+.ro-repair-whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
+  padding: 13px 24px;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.ro-repair-primary-button {
+  border: none;
+
+  background: #0077b6;
+  color: #ffffff;
+}
+
+.ro-repair-primary-button:hover {
+  background: #023e8a;
+  transform: translateY(-2px);
+}
+
+.ro-repair-secondary-button {
+  border: 1px solid #0077b6;
+
+  background: #ffffff;
+  color: #0077b6;
+}
+
+.ro-repair-secondary-button:hover {
+  background: #eaf8ff;
+  transform: translateY(-2px);
+}
+
+.ro-repair-whatsapp-button {
+  border: none;
+
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.ro-repair-whatsapp-button:hover {
+  transform: translateY(-2px);
+}
+
+/* GENERAL SECTIONS */
+
+.ro-repair-section {
+  padding: 90px 0;
+}
+
+.ro-repair-light-section {
+  background: #f7fcff;
+}
+
+.ro-repair-heading {
+  max-width: 720px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.ro-repair-heading h2 {
+  margin: 0;
+
+  color: #023047;
+
+  font-size: clamp(32px, 4vw, 45px);
+  line-height: 1.2;
+}
+
+.ro-repair-heading h2 span {
+  color: #0077b6;
+}
+
+.ro-repair-heading p {
+  margin: 16px auto 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* REPAIR GRID */
+
+.ro-repair-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.ro-repair-card {
+  padding: 32px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #dff3f9;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 25px rgba(0, 119, 182, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+.ro-repair-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 119, 182, 0.12);
+}
+
+.ro-repair-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f9ff;
+
+  font-size: 31px;
+}
+
+.ro-repair-card h3 {
+  margin: 0;
+
+  color: #023047;
+
+  font-size: 21px;
+}
+
+.ro-repair-card p {
+  margin: 12px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* FEATURES */
+
+.ro-repair-features {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.ro-repair-feature {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #dff3f9;
+  border-radius: 15px;
+}
+
+.ro-repair-feature strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #023047;
+
+  font-size: 18px;
+}
+
+.ro-repair-feature p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* SERVICE AREAS */
+
+.ro-repair-area-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.ro-repair-area-list span {
+  padding: 10px 18px;
+
+  border: 1px solid #ccebf5;
+  border-radius: 30px;
+
+  background: #f7fcff;
+
+  color: #0077b6;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* CTA */
+
+.ro-repair-cta {
+  padding: 80px 0;
+
+  background: #023047;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.ro-repair-cta h2 {
+  margin: 0;
+
+  font-size: clamp(32px, 4vw, 45px);
+}
+
+.ro-repair-cta p {
+  max-width: 650px;
+
+  margin: 16px auto 0;
+
+  color: #d6eaf4;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.ro-repair-cta .ro-repair-actions {
+  justify-content: center;
+}
+
+.ro-repair-home-link {
+  display: inline-block;
+
+  margin-top: 28px;
+
+  color: #bdeaff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+.ro-repair-home-link:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .ro-repair-hero {
+    padding: 100px 0 70px;
+  }
+
+  .ro-repair-section {
+    padding: 70px 0;
+  }
+
+  .ro-repair-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ro-repair-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .ro-repair-container {
+    width: 92%;
+  }
+
+  .ro-repair-hero {
+    padding: 90px 0 60px;
+  }
+
+  .ro-repair-hero h1 {
+    font-size: 38px;
+  }
+
+  .ro-repair-hero-description {
+    font-size: 15px;
+  }
+
+  .ro-repair-actions {
+    flex-direction: column;
+  }
+
+  .ro-repair-primary-button,
+  .ro-repair-secondary-button,
+  .ro-repair-whatsapp-button {
+    width: 100%;
+  }
+
+  .ro-repair-section {
+    padding: 60px 0;
+  }
+
+  .ro-repair-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ro-repair-features {
+    grid-template-columns: 1fr;
+  }
+
+  .ro-repair-card {
+    padding: 28px 20px;
+  }
+}

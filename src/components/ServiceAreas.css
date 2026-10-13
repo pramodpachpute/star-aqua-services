@@ -1,0 +1,336 @@
+
+/* ==========================================
+   STAR AQUA PREMIUM SERVICE AREAS
+========================================== */
+
+.service-areas-section {
+  width: 100%;
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    #f3fbff 0%,
+    #ffffff 100%
+  );
+  box-sizing: border-box;
+}
+
+.service-areas-container {
+  width: min(92%, 1220px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.service-areas-heading {
+  max-width: 750px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.service-areas-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 17px;
+  border: 1px solid #ccebf7;
+  border-radius: 30px;
+  background: #e5f8ff;
+  color: #0077b6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.service-areas-heading h2 {
+  margin: 22px 0 0;
+  color: #073047;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.service-areas-heading h2 span {
+  color: #0096c7;
+}
+
+.service-areas-heading p {
+  max-width: 650px;
+  margin: 19px auto 0;
+  color: #667f90;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* Highlight banner */
+
+.service-areas-highlight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+  padding: 23px 27px;
+  border: 1px solid #cdeaf6;
+  border-radius: 20px;
+  background: linear-gradient(110deg, #e8f8ff, #ffffff);
+  box-sizing: border-box;
+}
+
+.service-areas-highlight-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #d5f3ff;
+  color: #0077b6;
+  font-size: 24px;
+}
+
+.service-areas-highlight > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.service-areas-highlight strong {
+  display: block;
+  color: #10364b;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.service-areas-highlight p {
+  margin: 6px 0 0;
+  color: #6a8190;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.service-areas-count {
+  flex-shrink: 0;
+  padding: 10px 15px;
+  border: 1px solid #bde6f4;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #0077b6;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Area grid */
+
+.service-areas-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.service-area-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 76px;
+  padding: 16px 17px;
+  border: 1px solid #dcecf5;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(0, 80, 130, 0.045);
+  box-sizing: border-box;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-area-card:hover {
+  transform: translateY(-4px);
+  border-color: #a5ddec;
+  box-shadow: 0 14px 30px rgba(0, 95, 145, 0.1);
+}
+
+.service-area-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: #e7f8ff;
+  color: #008bb9;
+  font-size: 15px;
+}
+
+.service-area-name {
+  flex: 1;
+  min-width: 0;
+  color: #163b50;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.service-area-check {
+  flex-shrink: 0;
+  color: #4cbf9a;
+  font-size: 14px;
+}
+
+/* CTA */
+
+.service-areas-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+  padding: 30px 35px;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #006ba6, #0096c7);
+  box-sizing: border-box;
+}
+
+.service-areas-cta-text {
+  min-width: 0;
+}
+
+.service-areas-cta h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.service-areas-cta p {
+  max-width: 520px;
+  margin: 9px 0 0;
+  color: #e3f7ff;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.service-areas-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 49px;
+  padding: 13px 19px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0077b6;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.service-areas-whatsapp:hover {
+  color: #005c8c;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+  .service-areas-section {
+    padding: 75px 0;
+  }
+
+  .service-areas-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .service-areas-section {
+    padding: 60px 0;
+  }
+
+  .service-areas-heading {
+    margin-bottom: 35px;
+  }
+
+  .service-areas-heading h2 {
+    font-size: clamp(30px, 7vw, 38px);
+  }
+
+  .service-areas-heading p {
+    font-size: 14px;
+  }
+
+  .service-areas-highlight {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .service-areas-count {
+    margin-left: 0;
+  }
+
+  .service-areas-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .service-area-card {
+    min-height: 70px;
+    padding: 13px 12px;
+    gap: 9px;
+  }
+
+  .service-area-name {
+    font-size: 12px;
+  }
+
+  .service-area-icon {
+    width: 31px;
+    height: 31px;
+    font-size: 13px;
+  }
+
+  .service-area-check {
+    display: none;
+  }
+
+  .service-areas-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+    padding: 25px;
+  }
+
+  .service-areas-cta h3 {
+    font-size: 20px;
+  }
+
+  .service-areas-whatsapp {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Very small phones */
+
+@media (max-width: 380px) {
+  .service-areas-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-area-name {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-area-card,
+  .service-areas-whatsapp {
+    transition: none;
+  }
+}
