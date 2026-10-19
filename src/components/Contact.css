@@ -494,3 +494,73 @@
     transition: none;
   }
 }
+
+/* Star Aqua Services - Responsive Contact Layout */
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0 45px;
+  }
+
+  .contact-container {
+    width: min(92%, 600px);
+  }
+
+  .contact-heading {
+    margin-bottom: 32px;
+  }
+
+  .contact-heading h2 {
+    font-size: clamp(27px, 6vw, 36px);
+    letter-spacing: -0.5px;
+  }
+
+  .contact-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .contact-card,
+  .contact-map-card {
+    width: 100%;
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-card-heading,
+  .contact-map-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .contact-card-heading h3,
+  .contact-map-heading h3 {
+    font-size: 20px;
+  }
+
+  .contact-detail-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .contact-detail-text a,
+  .contact-detail-text span {
+    overflow-wrap: anywhere;
+  }
+
+  .map-container,
+  .map-container iframe {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-call-button,
+  .contact-whatsapp-button {
+    width: 100%;
+  }
+}
